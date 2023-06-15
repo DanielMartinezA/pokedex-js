@@ -1,0 +1,156 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* 16px x 0.625 = 10px */
+}
+@font-face {
+  font-family: pokeFont;
+  src: url(../assets/fonts/PKMN\ RBYGSC.ttf);
+  /*Copyright David Fens 2013 - GAME FREAK - FontStruct*/
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+:root {
+  --pokeRed: #d05030;
+}
+.title {
+  color: white;
+}
+.pokedex span, .pokedex p {
+  font-family: pokeFont;
+}
+img{
+  display: block;
+  margin: 0 auto;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.error-message {
+  color: red;
+}
+.pokedex {
+  height: 450px;
+  width: 500px;
+  background: var(--pokeRed);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body {
+  background: #202020;
+}
+.content {
+  margin: 16px 3px;
+  border: solid 3px white;
+  background: black;
+  display: flex;
+  flex-direction: column;
+}
+.stats-and-image {
+  display: flex;
+  margin: 5px 3px;
+  justify-content: space-between;
+}
+.pokeImage-and-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pokeImage-and-number > span{
+  color: white;
+  font-size: 2.3rem;
+}
+.pokeImage {
+  height: 175px;
+  width: 175px;
+  background: white;
+  display: flex;
+  align-items: flex-end;
+}
+.img-pkmn {
+  display: block;
+  width: auto;
+  height: 70%;
+  image-rendering: -moz-crisp-edges;
+}
+.img-no-pkmn {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: -20px;
+}
+.stats > span {
+  font-size: 2.5rem;
+  line-height: 5rem;
+  color: white;
+}
+.stats > .footprint {
+  color: black;
+  font-size: 1rem;
+  line-height: 4rem;
+}
+.height-and-weight-lines {
+  display: flex;
+}
+.height-and-weight-lines > span{
+  font-size: 2.5rem;
+  line-height: 5rem;
+  color: white;
+}
+.height-and-weight-lines > span + span{
+  margin-left: 50px;
+  letter-spacing: 0.5rem;
+}
+.flavor-text-container {
+
+}
+.page-number {
+  color: white;
+  margin-left: 3px;
+}
+.page-number > span {
+  border: solid 5px var(--pokeRed);
+  padding: 2px 2px 0 2px;
+  font-size: 1.5rem;
+}
+.flavor-text {
+  margin: 0 10px 0 3px;
+  border-top: solid 5px var(--pokeRed);
+}
+.flavor-text > p {
+  font-size: 2.5rem;
+  color: white;
+  letter-spacing: 0.2rem;
+  word-spacing: 2rem;
+  line-height: 5rem;
+  margin: 1px 0 1px 27px;
+}
+.text-hidden {
+  color: black !important;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  background: black;
+}
+.buttons > span{
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: white;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

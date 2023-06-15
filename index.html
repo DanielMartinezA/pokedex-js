@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This page simulates the Pokemon Gen II Pokedex">
+    	<meta name="keywords" content="Pokemon, Pokedex">
+
+		<title>Pokedex using pokemon API</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<h1 class="title">Enter the name of a Gen II Pokemon</h1>
+		<input id='poke1' type="text" name="">
+		<button type="button" name="button">Find Entry</button>
+		<span id="pkmnNotFound" class="error-message"></span>
+
+		<section class="pokedex">
+			<section class="content">
+				<section class="stats-and-image">
+					<div class="pokeImage-and-number">
+						<div class="pokeImage">
+							<img class="img-no-pkmn" id="noPkmnImage" src="img/no-pkmn.png" alt="No pokemon selected">
+							<img class="img-pkmn" id="pkmnImage" src="" alt="">
+						</div>
+						<span id="pkmnIndex">No. ???</span>
+					</div>
+					<div class="stats">
+						<span id="pkmnFootprint" class="footprint">Footprint</span>
+						<span id="pkmnName" class="uppercase">???</span>
+						<span id="pkmnGenus" class="uppercase">???</span>
+						<div class="height-and-weight-lines">
+              <span>HT</span>
+              <span id="pkmnHeight">?'??''</span>
+            </div>
+						<div class="height-and-weight-lines">
+              <span>WT</span>
+              <span id="pkmnWeight">??? lb</span>
+            </div>
+					</div>
+				</section>
+				<section class="flavor-text-container">
+					<div class="page-number">
+						<span id="pkdexPageNumber">
+							P.1
+						</span>
+					</div>
+					<div class="flavor-text">
+						<p class="text-hidden" id="pkmnFlavorText">During the day, it<br>stays in the cold<br>underground to</p>
+					</div>
+				</section>
+			</section>
+			<section class="buttons">
+				<span id="page-button">page</span>
+				<span>area</span>
+				<span>cry</span>
+				<span>prnt</span>
+			</section>
+		</section>
+		
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
