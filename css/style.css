@@ -79,7 +79,7 @@ body {
   display: block;
   width: auto;
   height: 70%;
-  image-rendering: -moz-crisp-edges;
+  image-rendering: pixelated;
 }
 .img-no-pkmn {
   display: block;
